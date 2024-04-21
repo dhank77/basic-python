@@ -2,12 +2,18 @@
 # Write a function definition named get_values_in_common that takes two lists and returns a single set with the values that each list has in common
 
 def get_values_in_common(data1, data2) : 
-    common = []
-    for x in data1 :
-        for y in data2 :
-            if(x == y) :
-                common.append(x)
-    return set(common)
+    # common = []
+    # for x in data1 :
+    #     for y in data2 :
+    #         if(x == y) :
+    #             common.append(x)
+    # return set(common)
+
+    # Cara lain
+    set1 = set(data1)
+    set2 = set(data2)
+    # return set1 & set2
+    return set1.intersection(set2)
 
 assert get_values_in_common([5, 1, 2, 3], [3, 4, 5, 5]) == {3, 5}
 assert get_values_in_common([1, 2], [2, 2, 3]) == {2}
