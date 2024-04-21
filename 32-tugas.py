@@ -6,7 +6,8 @@
 
 def square_root(number) : 
     # return number ** (1/2)
-    return number ** 0.5
+    # return number ** 0.5
+    return number ** .5
 
 assert square_root(4) == 2.0
 assert square_root(64) == 8.0
