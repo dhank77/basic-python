@@ -8,8 +8,16 @@ negative_even_number = random.randrange(-100, -1, 2)
 positive_odd_number = random.randrange(1, 100, 2)
 negative_odd_number = random.randrange(-101, 0, 2)
 
+# Short hand
+# def is_positive(number) :
+#     return True  if number > 0 else False
+
+# Standart
 def is_positive(number) :
-    return True  if number > 0 else False
+    if(number > 0) : 
+        return True
+    else : 
+        return False
         
 assert is_positive(positive_odd_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
 assert is_positive(positive_even_number) == True, "Ensure that the function is defined, named properly, and returns the correct value"
