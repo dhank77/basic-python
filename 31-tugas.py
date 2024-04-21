@@ -5,8 +5,11 @@ import random
 positive_even_number = random.randrange(2, 101, 2)
 positive_odd_number = random.randrange(1, 100, 2)
 
+# def cube (number) :
+#     return number * number * number
+
 def cube (number) :
-    return number * number * number
+    return number ** 3
 
 assert cube(3) == 27
 assert cube(2) == 8
