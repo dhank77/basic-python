@@ -4,8 +4,10 @@
 def get_values_not_in_common(data1, data2) : 
     set1 = set(data1)
     set2 = set(data2)
-    com1 = (set1 - set2)
-    com2 = (set2 - set1)
+    # com1 = (set1 - set2)
+    # com2 = (set2 - set1)
+    com1 = set1.difference(set2)
+    com2 = set2.difference(set1)
     return  com1.union(com2)
 
 assert get_values_not_in_common([5, 1, 2, 3], [3, 4, 5, 5]) == {1, 2, 4}
